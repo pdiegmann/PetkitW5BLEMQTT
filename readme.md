@@ -1,6 +1,6 @@
 # PetkitW5BLEMQTT
 
-Effortlessly connect, control, and monitor your Petkit W5 series water fountains with this no-cloud Python library. Utilizing BLE and MQTT Discovery, integrate your Petkit devices seamlessly with Home Assistant and enjoy total control and insight into your fountains.
+Effortlessly connect, control, and monitor your Petkit W5 series water fountains with this no-cloud Python library. Utilizing BLE and MQTT Discovery, integrate your Petkit devices seamlessly with Home Assistant and enjoy total control and insight into your fountains. Your pets will love you for it!
 
 ## Features
 
@@ -23,7 +23,6 @@ git clone https://github.com/slespersen/PetkitW5BLEMQTT.git
 ln -s $(pwd)/PetkitW5BLEMQTT /path/to/your/python/site-packages/PetkitW5BLEMQTT
 ```
 
-
 ### Usage
 
 `main.py` is provided for running the library. Below are the arguments it accepts:
@@ -45,9 +44,9 @@ Here’s a quick example to get you started:
 sh
 
 ```
-python main.py --address "A4:C1:38:F7:D8:0E" --mqtt --mqtt_broker "broker.example.com" --mqtt_port 1883 --mqtt_user "user" --mqtt_password "password" --logging_level "INFO"
-
+python main.py --address "A1:B2:C3:D4:E5:F6" --mqtt --mqtt_broker "broker.example.com" --mqtt_port 1883 --mqtt_user "user" --mqtt_password "password" --logging_level "INFO"
 ```
+
 ## Caveats
 
 -   Device ID and secret have not been fixed.
