@@ -480,9 +480,9 @@ class MQTTPayloads:
                 "availability_topic": f"PetkitMQTT/{self.device.mac_readable}/availability",
                 "payload_available": "online",
                 "payload_not_available": "offline",
-                "payload_on": 0,
-                "payload_off": 1,
-                "command_template": "{\"reset_filter\": {{ value }} }"
+                "payload_on": 1,
+                "payload_off": 0,
+                "command_template": "{\"reset_filter\": {{ 1 }} }"
             },
             "state_switch": {
                 "name": "Run",

@@ -117,7 +117,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     mqtt_settings = {
-        "client_id": "PetkitW5BLEMQTTClient",
+        "client_id": f"PetkitW5BLEMQTTClient-{args.address.replace(':','')}",
         "broker": args.mqtt_broker,
         "port": args.mqtt_port,
         "username": args.mqtt_user,
