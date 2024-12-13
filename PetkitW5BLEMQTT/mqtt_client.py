@@ -52,7 +52,7 @@ class MQTTClient:
         self.client.publish(topic, payload, qos, retain)
 
     def publish_availability(self, identifier, state):
-        self.client.publish(f"PetkitMQTT/{identifier}/availability", state)
+        self.client.publish(f"PetkitMQTT/{identifier}/availability", state, 0, True)
         
     def publish_state(self, identifier, state):
         self.client.publish(f"PetkitMQTT/{identifier}/state", json.dumps(state))
