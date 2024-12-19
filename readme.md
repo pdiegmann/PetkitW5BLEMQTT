@@ -52,6 +52,8 @@ python main.py --address "A1:B2:C3:D4:E5:F6" --mqtt --mqtt_broker "broker.exampl
 -   Device ID and secret have not been fixed.
     
 -   Using the library, especially CMD 73, will set a secret that may interfere with the app's communication with the device.
+
+-	The library currently does not support scheduling Do Not Disturb and Lights Out.
     
 
 ## Inspiration, Resources & Acknowledgements
@@ -73,6 +75,7 @@ This project is licensed under the MIT License.
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue.
+Should you want to help out, in reverse engineering the secret - please reach out. As I only have two keys, more examples are needed to figure out how the algorithm works.
 
 ## Support
 
