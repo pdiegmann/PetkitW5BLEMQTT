@@ -3,7 +3,7 @@ Description=Communicating with Petkit W5-family water fountains using Bluetooth 
 After=network.target dbus.service
 
 [Service]
-ExecStart=/usr/bin/python3 --address BLE_ADDRESS --mqtt --mqtt_broker MQTT_BROKER --mqtt_port MQTT_PORT --mqtt_user MQTT_USER --mqtt_password MQTT_PASSWORD --logging_level INFO
+ExecStart=/usr/bin/python3 /path/to/PetkitW5BLEMQTT/main.py --address BLE_ADDRESS --mqtt --mqtt_broker MQTT_BROKER --mqtt_port MQTT_PORT --mqtt_user MQTT_USER --mqtt_password MQTT_PASSWORD --logging_level INFO
 Restart=always
 
 [Install]
