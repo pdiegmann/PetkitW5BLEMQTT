@@ -1,7 +1,8 @@
 # check=skip=SecretsUsedInArgOrEnv
 FROM python:slim
 
-COPY main.py PetkitW5BLEMQTT/ /src/
+COPY ./main.py /src/main.py
+COPY ./PetkitW5BLEMQTT /src/PetkitW5BLEMQTT
 
 WORKDIR /src/
 
