@@ -15,4 +15,4 @@ ENV USER=""
 ENV PASSWORD=""
 ENV LOG_LEVEL="INFO"
 
-CMD ["python", "./main.py", "--address $ADDRESS", "--mqtt", "--mqtt_broker $BROKER", "--mqtt_port $PORT", "--mqtt_user $USER", "--mqtt_password $PASSWORD", "--logging_level $LOG_LEVEL"] 
+CMD ["python", "./main.py --address $ADDRESS --mqtt --mqtt_broker $BROKER --mqtt_port $PORT --mqtt_user $USER --mqtt_password $PASSWORD --logging_level $LOG_LEVEL"] 
